@@ -15,3 +15,11 @@ class MaskedAutoencoderGroupChannelViT(nn.Module):
         super().__init__()
 
     - need to change channels and groups to adapt
+
+
+    class SatelliteDataset(Dataset):
+    """
+    Abstract class.
+    """
+    def __init__(self, in_c):
+        self.in_c = in_c
