@@ -68,3 +68,5 @@ images, and 84,966 test images. The fMoW-Sentinel dataset is derived from two da
 Note that when loading the train.csv or val.csv files, you may have to preprocess a column called image_path. The image_path for any row can be constructed like this:
 
 fmow-sentinel/<split>/<category>/<category>_<location_id>/<category>_<location_id>_<image_id>.tif
+
+- original function https://github.com/fMoW/baseline/blob/master/code/data_ml_functions/dataFunctions.py#L107
