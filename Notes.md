@@ -23,7 +23,7 @@ class MaskedAutoencoderGroupChannelViT(nn.Module):
         transform = SentinelIndividualImageDataset.build_transform(is_train, args.input_size*4, mean, std) # input_size*2 = 96*2 = 192
         dataset = SentinelIndividualImageDataset(file_path, transform, masked_bands=args.masked_bands,
                                                  dropped_bands=args.dropped_bands)
-                                                 
+
 # Dataset Class
     class SatelliteDataset(Dataset):
     """
@@ -31,3 +31,6 @@ class MaskedAutoencoderGroupChannelViT(nn.Module):
     """
     def __init__(self, in_c):
         self.in_c = in_c
+
+# Classes
+- don't need if have generic training need
