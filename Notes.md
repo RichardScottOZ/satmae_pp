@@ -34,3 +34,27 @@ class MaskedAutoencoderGroupChannelViT(nn.Module):
 
 # Classes
 - don't need if have generic training need
+
+# Example data formats
+- https://purl.stanford.edu/vg497cb6002
+
+README.md
+File 1
+
+2.85 kB	 DownloadREADME.md
+fmow-sentinel.tar.gz
+File 2
+
+77.50 GB	 Downloadfmow-sentinel.tar.gz
+test_gt.csv
+File 3
+
+21.16 MB	 Downloadtest_gt.csv
+train.csv
+File 4
+
+178.78 MB	 Downloadtrain.csv
+val.csv
+File 5
+
+21.15 MB	 Download
