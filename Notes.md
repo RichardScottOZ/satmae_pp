@@ -58,3 +58,7 @@ val.csv
 File 5
 
 21.15 MB	 Download
+
+Abstract
+The Functional Map of the World - Sentinel-2 corresponding images (fMoW-Sentinel) dataset consists of image time series collected by the Sentinel-2 satellite, corresponding to locations from the Functional Map of the World (fMoW) dataset across several different times. The dataset follows the locations of the fMoW dataset, which are categorized by 62 different types of building/land uses. These images have a 10m spatial resolution, are created from cloud composites over 90 day intervals, and contain one channel for each of the 13 bands of the Sentinel-2 surface reflectance dataset. The dataset is split into train, validation, and test sets according to the original fMoW data splits (metadata is contained in train.csv, val.csv, test_gt.csv), with 712,874 training images, 84,939 validation
+images, and 84,966 test images. The fMoW-Sentinel dataset is derived from two data sources with their own licenses: The Functional Map of the World Challenge Public License (https://raw.githubusercontent.com/fMoW/dataset/master/LICENSE) applies to the locations and categories of the images in the dataset (i.e. the data in the metadata CSV files), while the Sentinel-2 License (https://scihub.copernicus.eu/twiki/pub/SciHubWebPortal/TermsConditions/Sentinel_Data_Terms_and_Conditions.pdf) applies to the images themselves.
