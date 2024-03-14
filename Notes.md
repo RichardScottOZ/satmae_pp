@@ -16,7 +16,15 @@ class MaskedAutoencoderGroupChannelViT(nn.Module):
 
     - need to change channels and groups to adapt
 
-
+# Dataset Type Creation
+ elif args.dataset_type == 'sentinel':
+        mean = SentinelIndividualImageDataset.mean
+        std = SentinelIndividualImageDataset.std
+        transform = SentinelIndividualImageDataset.build_transform(is_train, args.input_size*4, mean, std) # input_size*2 = 96*2 = 192
+        dataset = SentinelIndividualImageDataset(file_path, transform, masked_bands=args.masked_bands,
+                                                 dropped_bands=args.dropped_bands)
+                                                 
+# Dataset Class
     class SatelliteDataset(Dataset):
     """
     Abstract class.
