@@ -28,6 +28,8 @@ ImportError: DLL load failed while importing _version: The operating system cann
 - https://pytorch.org/get-started/locally/
 - geopandas to get bonus gdal
 - rasterio via conda-forge
+- tensorboard vai conda-forge
+- pip install timm
 
 
 # Channels
