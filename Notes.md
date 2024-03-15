@@ -13,12 +13,14 @@
 ImportError: DLL load failed while importing _imaging: The operating system cannot run %1.
 
 - try Pillow=9.3
+
 ## rasterio 1.3.9
 - from rasterio._version import gdal_version, get_geos_version, get_proj_version
 ImportError: DLL load failed while importing _version: The operating system cannot run %1.
 
 - Not a rasterio 1.2.10 problem
 - gdal most likely
+- start with 3.3?
 
 
 # Channels
