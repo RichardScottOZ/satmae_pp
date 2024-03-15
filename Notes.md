@@ -23,6 +23,12 @@ ImportError: DLL load failed while importing _version: The operating system cann
 - start with 3.3?
 - will need higher for python 3.11 however
 
+# from scratch
+- pytorch as pre instructions
+- https://pytorch.org/get-started/locally/
+- geopandas to get bonus gdal
+- rasterio via conda-forge
+
 
 # Channels
 Group channels here in
