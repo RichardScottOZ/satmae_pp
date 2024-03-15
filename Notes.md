@@ -42,6 +42,11 @@ traceback (most recent call last):
 AttributeError: module 'timm.optim.optim_factory' has no attribute 'add_weight_decay'
 ```python
 
+## Environment advice
+- from https://github.com/techmn/satmae_pp/issues/1
+- Installing timm as advised 0.4.12
+	- Runs until it can't find data as expected, so good.
+
 
 # Channels
 Group channels here in
