@@ -1,5 +1,11 @@
 # MAE
 
+# Packages
+- timm
+- openv/opency-python
+- rasterio
+
+# Channels
 Group channels here in
 
 class MaskedAutoencoderGroupChannelViT(nn.Module):
