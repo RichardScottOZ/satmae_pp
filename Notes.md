@@ -21,6 +21,7 @@ ImportError: DLL load failed while importing _version: The operating system cann
 - Not a rasterio 1.2.10 problem
 - gdal most likely
 - start with 3.3?
+- will need higher for python 3.11 however
 
 
 # Channels
