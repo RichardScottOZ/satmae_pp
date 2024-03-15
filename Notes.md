@@ -7,12 +7,18 @@
 
 # Errors
 - Widowns 10
-
+## pillow 10.1
 -  File "C:\Users\rscott\AppData\Local\miniconda3\envs\textgen\Lib\site-packages\PIL\Image.py", line 84, in <module>
     from . import _imaging as core
 ImportError: DLL load failed while importing _imaging: The operating system cannot run %1.
 
 - try Pillow=9.3
+## rasterio 1.3.9
+- from rasterio._version import gdal_version, get_geos_version, get_proj_version
+ImportError: DLL load failed while importing _version: The operating system cannot run %1.
+
+- Not a rasterio 1.2.10 problem
+- gdal most likely
 
 
 # Channels
