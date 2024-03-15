@@ -32,6 +32,16 @@ ImportError: DLL load failed while importing _version: The operating system cann
 - pip install timm
 - opencv
 
+## Errors
+```python
+traceback (most recent call last):
+  satmae_pp\main_pretrain.py", line 237, in <module>
+    main(args)
+  satmae_pp\main_pretrain.py", line 178, in main
+    param_groups = optim_factory.add_weight_decay(model_without_ddp, args.weight_decay)
+AttributeError: module 'timm.optim.optim_factory' has no attribute 'add_weight_decay'
+```python
+
 
 # Channels
 Group channels here in
