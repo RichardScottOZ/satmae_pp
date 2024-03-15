@@ -2,7 +2,7 @@
 
 # Packages
 - timm
-- openv/opency-python
+- opencv/opencv-python
 - rasterio
 
 # Errors
@@ -28,8 +28,9 @@ ImportError: DLL load failed while importing _version: The operating system cann
 - https://pytorch.org/get-started/locally/
 - geopandas to get bonus gdal
 - rasterio via conda-forge
-- tensorboard vai conda-forge
+- tensorboard via conda-forge
 - pip install timm
+- opencv
 
 
 # Channels
