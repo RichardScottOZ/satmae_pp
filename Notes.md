@@ -5,6 +5,16 @@
 - openv/opency-python
 - rasterio
 
+# Errors
+- Widowns 10
+
+-  File "C:\Users\rscott\AppData\Local\miniconda3\envs\textgen\Lib\site-packages\PIL\Image.py", line 84, in <module>
+    from . import _imaging as core
+ImportError: DLL load failed while importing _imaging: The operating system cannot run %1.
+
+- try Pillow=9.3
+
+
 # Channels
 Group channels here in
 
