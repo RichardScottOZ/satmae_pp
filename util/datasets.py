@@ -214,6 +214,7 @@ class SentinelIndividualImageDataset(SatelliteDataset):
         :param masked_bands: List of indices corresponding to which bands to mask out
         :param dropped_bands:  List of indices corresponding to which bands to drop from input image tensor
         """
+        print("CSV PATH CHECK",csv_path)
         super().__init__(in_c=13)
         self.csv_path = csv_path
         self.base_path = '/'
@@ -344,6 +345,8 @@ def build_fmow_dataset(is_train: bool, args) -> SatelliteDataset:
     :return: SatelliteDataset object.
     """
     file_path = os.path.join(args.train_path if is_train else args.test_path)
+    print("FILE PATH:",file_path)
+    print("ARGS TRAIN PATH",args.train_path)
 
     if args.dataset_type == 'rgb':
         mean = CustomDatasetFromImages.mean
