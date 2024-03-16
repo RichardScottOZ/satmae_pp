@@ -119,3 +119,20 @@ Note that when loading the train.csv or val.csv files, you may have to preproces
 fmow-sentinel/<split>/<category>/<category>_<location_id>/<category>_<location_id>_<image_id>.tif
 
 - original function https://github.com/fMoW/baseline/blob/master/code/data_ml_functions/dataFunctions.py#L107
+
+
+# fmow sentinel testing
+python -m main_pretrain.py \
+--batch_size 8 --accum_iter 16 \
+--epochs 1 --warmup_epochs 1 \
+--input_size 96 --patch_size 8 \
+--mask_ratio 0.75 \
+--model_type group_c \
+--dropped_bands 0 9 10 \
+--dataset_type sentinel --dropped_bands 0 9 10 \
+--grouped_bands 0 1 2 6 --grouped_bands 3 4 5 7 --grouped_bands 8 9 \
+--blr 0.0001 --num_workers 16 \
+--output_dir ./output_dir \
+--log_dir ./output_dir
+
+python -m main_pretrain.py --batch_size 8 --accum_iter 16 --epochs 1 --warmup_epochs 1 --input_size 96 --patch_size 8 --mask_ratio 0.75 --model_type group_c --dropped_bands 0 9 10 --dataset_type sentinel --dropped_bands 0 9 10 --grouped_bands 0 1 2 6 --grouped_bands 3 4 5 7 --grouped_bands 8 9 --blr 0.0001 --num_workers 8 --train_path /home/fmow-sentinel/train.csv --output_dir ./output_dir --log_dir ./output_dir
