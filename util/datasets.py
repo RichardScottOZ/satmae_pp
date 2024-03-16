@@ -283,7 +283,15 @@ class SentinelIndividualImageDataset(SatelliteDataset):
         img_id = selection['image_id']
         image_path = '{0}/{1}_{2}/{3}_{4}_{5}.tif'.format(cat,cat,loc_id,cat,loc_id,img_id)
 
+        print("self.base_path",self.base_path)
+        print("folder",folder)
+        print("image_path",image_path)
         abs_img_path = os.path.join(self.base_path, folder, image_path)
+
+        abs_img_path = os.path.join(self.base_path[1:],folder + "/",image_path)
+        print("abs image_path",abs_img_path)
+        print("PWD",os.getcwd())
+        
 
         images = self.open_image(abs_img_path)  # (h, w, c)
         if self.masked_bands is not None:
